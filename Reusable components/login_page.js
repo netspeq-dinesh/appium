@@ -106,6 +106,7 @@ class LoginPage {
     //  await this.driver.waitUntil(() => this.driver.elementDisplayed(this.guestLogin));
 
     //  await this.driver.elementClick(this.guestLogin);
+       await this.driver.elementClick(find.pageBack);
 
 } 
     

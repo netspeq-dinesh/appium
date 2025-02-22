@@ -1,0 +1,11 @@
+{
+    "validUser": {
+      "email": "test@appium.com",
+      "password": "123456"
+    },
+    "invalidUser": {
+      "email": "invalid@appium.com",
+      "password": "wrongpass"
+    }
+  }
+  

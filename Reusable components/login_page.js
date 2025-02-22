@@ -11,7 +11,6 @@ class LoginPage {
 
    }
 
-
     get passwordField() {
 
     return find.ancestor({

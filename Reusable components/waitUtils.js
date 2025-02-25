@@ -23,3 +23,10 @@ module.exports = {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 };
+
+
+//how to use 
+
+// await waitUtils.waitForElement(this.driver, this.emailField);
+//await waitUtils.delay();
+

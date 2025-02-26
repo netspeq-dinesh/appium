@@ -9,12 +9,12 @@
 // Example of POM in Appium Flutter Testing with JavaScript
 // Let’s assume we are testing a Login Page of a Flutter app.
 
+
 // 1️⃣ Page Object for Login Page (loginPage.js)
 
-
-
-
 //loginPage.js
+
+
 
 const { byValueKey } = require('appium-flutter-finder');
 

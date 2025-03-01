@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'home_screen.dart';
+import 'package:appium_one/scroll_page.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -53,7 +54,7 @@ class _LoginScreenState extends State<LoginScreen> {
             children: [
               const SizedBox(height: 25),
               TextFormField(
-                key: const Key("emailField"),
+                key: const ValueKey("emailField"),
                 controller: emailController,
                 decoration: InputDecoration(
                   labelText: "Email",
@@ -89,6 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 controller: passwordController,
                 obscureText: true,
                 decoration: InputDecoration(
+                  //label: Text("Password"),
                   labelText: "Password",
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
@@ -116,6 +118,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   return null;
                 },
               ),
+
               const SizedBox(height: 20),
 
                Container(
@@ -135,11 +138,16 @@ class _LoginScreenState extends State<LoginScreen> {
                      SizedBox( width:0 ,),
                      
                      TextButton(onPressed: (){
-                 
+
+                       // Navigator.push(
+                       //     context,
+                       //   MaterialPageRoute(builder: (context) => HomeScreenPage(username: 'Guest',)
+                       // ),
+                       // );
+
                        Navigator.push(
-                           context,
-                         MaterialPageRoute(builder: (context) => HomeScreenPage(username: 'Guest',)
-                       ),
+                         context,
+                         MaterialPageRoute(builder: (context) => ScrollTestPage()),
                        );
 
                      },
@@ -160,8 +168,12 @@ class _LoginScreenState extends State<LoginScreen> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                       ),
+
                       key: const Key("loginButton"),
+
                       onPressed: login,
+
+
                       child: const Text(
                         "Login",
                         style: TextStyle(color: Colors.white, fontSize: 20),
@@ -170,6 +182,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ],
               ),
+
             ],
           ),
         ),

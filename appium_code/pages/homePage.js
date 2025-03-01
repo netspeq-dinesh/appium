@@ -2,12 +2,14 @@ const find  = require('appium-flutter-finder');
 const{expect} = require('chai');
 
 class HomePage {
+
     constructor(driver) {
       this.driver = driver;
     }
    
     
     // Example element selectors for home screen
+    
     get welcomeBanner() 
     {  
       return find.byValueKey("welcome"); 

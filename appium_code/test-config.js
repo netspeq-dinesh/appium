@@ -9,6 +9,7 @@ module.exports ={
       'appium:automationName':'Flutter',
       'appium:app': "C:/Users/netsp/OneDrive/Desktop/Appium_Demo/appium_one/build/app/outputs/flutter-apk/app-debug.apk", 
       'appium:noReset': true,
+      "appium:newCommandTimeout": 1200 
       // accessibilityIdEnabled: true
     },
     iosCaps:{

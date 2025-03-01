@@ -1,0 +1,223 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2025-02-27T07:41:58.380Z",
+    "end": "2025-02-27T07:42:39.025Z",
+    "duration": 40645,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c043b2c5-fb37-4ac2-967f-e18ae3028770",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b6ce0d4c-af70-40f4-a841-e70129a256b9",
+          "title": "Integration Test: Login Flow",
+          "fullFile": "C:\\Users\\netsp\\OneDrive\\Desktop\\Appium_Demo\\appium_code\\tests\\01_login.test.js",
+          "file": "\\tests\\01_login.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Integration Test: Login Flow\"",
+              "fullTitle": "Integration Test: Login Flow \"before all\" hook in \"Integration Test: Login Flow\"",
+              "timedOut": false,
+              "duration": 4852,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "test = new BaseTest();\n    await test.init(\"android\");\n    loginPage = new LoginPage(test.driver);\n    homePage = new HomePage(test.driver);\n   // logoutPage = new LogoutPage(test.driver);\n   // redirectLoginPage = new RedirectLoginPage(test.driver); \n   console.clear();\n   process.stdout.write(\"\\x1Bc\");",
+              "err": {},
+              "uuid": "39ed9607-e1fc-42f1-80cb-70361eac8321",
+              "parentUUID": "b6ce0d4c-af70-40f4-a841-e70129a256b9",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Integration Test: Login Flow\"",
+              "fullTitle": "Integration Test: Login Flow \"after all\" hook in \"Integration Test: Login Flow\"",
+              "timedOut": false,
+              "duration": 149,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await test.tearDown();",
+              "err": {},
+              "uuid": "1cab04ec-345b-4fc1-9d02-e55a92c8ef23",
+              "parentUUID": "b6ce0d4c-af70-40f4-a841-e70129a256b9",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should login first successfully with valid credentials",
+              "fullTitle": "Integration Test: Login Flow should login first successfully with valid credentials",
+              "timedOut": true,
+              "duration": 30018,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// await driver.reset();\n    await loginPage.login(loginData.validUser.email, loginData.validUser.password);\n    const displayed = await homePage.isDisplayed();\n    console.log(\"home page displayed\",displayed);\n    expect(displayed).to.be.true;",
+              "err": {
+                "message": "Error: Timeout of 30000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\netsp\\OneDrive\\Desktop\\Appium_Demo\\appium_code\\tests\\01_login.test.js)",
+                "estack": "Error: Timeout of 30000ms exceeded. For async tests and hooks, ensure \"done()\" is called; if returning a Promise, ensure it resolves. (C:\\Users\\netsp\\OneDrive\\Desktop\\Appium_Demo\\appium_code\\tests\\01_login.test.js)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)",
+                "diff": null
+              },
+              "uuid": "96552227-5acf-4833-a866-800c013ba67a",
+              "parentUUID": "b6ce0d4c-af70-40f4-a841-e70129a256b9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "96552227-5acf-4833-a866-800c013ba67a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 30018,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "182f0b7f-9960-4692-aaa2-223af981a5a0",
+          "title": "Search Feature Test",
+          "fullFile": "C:\\Users\\netsp\\OneDrive\\Desktop\\Appium_Demo\\appium_code\\tests\\02_search.test.js",
+          "file": "\\tests\\02_search.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Search Feature Test\"",
+              "fullTitle": "Search Feature Test \"before all\" hook in \"Search Feature Test\"",
+              "timedOut": false,
+              "duration": 3621,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "test = new BaseTest();\nawait test.init(\"android\"); // Initialize Appium session\nsearchPage = new SearchPage(test.driver);",
+              "err": {},
+              "uuid": "6cd8e1a7-9a88-4ffc-8ce9-161a70512b3f",
+              "parentUUID": "182f0b7f-9960-4692-aaa2-223af981a5a0",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Search Feature Test\"",
+              "fullTitle": "Search Feature Test \"after all\" hook in \"Search Feature Test\"",
+              "timedOut": false,
+              "duration": 143,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await test.tearDown(); // Close session",
+              "err": {},
+              "uuid": "f64ef2ff-817c-49f3-9966-e9a5cfb29536",
+              "parentUUID": "182f0b7f-9960-4692-aaa2-223af981a5a0",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should enter search text 'Dinesh' and verify input",
+              "fullTitle": "Search Feature Test should enter search text 'Dinesh' and verify input",
+              "timedOut": false,
+              "duration": 1855,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await searchPage.search(\"Dinesh\");\n// ✅ Verify search input field contains \"Dinesh\"\nconst searchText = await test.driver.getElementText(searchPage.searchField);\nexpect(searchText).to.include(\"Dinesh\");\nconsole.log(\"✅ Successfully entered and verified search text: Dinesh\");",
+              "err": {
+                "message": "unknown error: WebDriverError: An unknown server-side error occurred while processing the command. Original error: Cannot execute command get_text, server response {\n  \"isError\": true,\n  \"response\": \"Uncaught extension error while executing get_text: Unsupported operation: Type TextFormField is currently not supported by getText\\n#0      CommandHandlerFactory._getText (package:flutter_driver/src/common/handler_factory.dart:409:7)\\n<asynchronous suspension>\\n#1      FlutterDriverExtension.call (package:flutter_driver/src/extension/extension.dart:371:31)\\n<asynchronous suspension>\\n#2      BindingBase.registerServiceExtension.<anonymous closure> (package:flutter/src/foundation/binding.dart:950:18)\\n<asynchronous suspension>\\n#3      _runExtension.<anonymous closure> (dart:developer-patch/developer.dart:112:11)\\n<asynchronous suspension>\\n\",\n  \"type\": \"_extensionType\",\n  \"method\": \"ext.flutter.driver\"\n} when running \"element/eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoic2VhcmNoRmllbGQiLCJrZXlWYWx1ZVR5cGUiOiJTdHJpbmcifQ/text\" with method \"GET\"",
+                "estack": "unknown error: WebDriverError: An unknown server-side error occurred while processing the command. Original error: Cannot execute command get_text, server response {\n  \"isError\": true,\n  \"response\": \"Uncaught extension error while executing get_text: Unsupported operation: Type TextFormField is currently not supported by getText\\n#0      CommandHandlerFactory._getText (package:flutter_driver/src/common/handler_factory.dart:409:7)\\n<asynchronous suspension>\\n#1      FlutterDriverExtension.call (package:flutter_driver/src/extension/extension.dart:371:31)\\n<asynchronous suspension>\\n#2      BindingBase.registerServiceExtension.<anonymous closure> (package:flutter/src/foundation/binding.dart:950:18)\\n<asynchronous suspension>\\n#3      _runExtension.<anonymous closure> (dart:developer-patch/developer.dart:112:11)\\n<asynchronous suspension>\\n\",\n  \"type\": \"_extensionType\",\n  \"method\": \"ext.flutter.driver\"\n} when running \"element/eyJmaW5kZXJUeXBlIjoiQnlWYWx1ZUtleSIsImtleVZhbHVlU3RyaW5nIjoic2VhcmNoRmllbGQiLCJrZXlWYWx1ZVR5cGUiOiJTdHJpbmcifQ/text\" with method \"GET\"\n    at FetchRequest._request (file:///C:/Users/netsp/OneDrive/Desktop/Appium_Demo/appium_code/node_modules/webdriver/build/node.js:1706:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Browser.wrapCommandFn (file:///C:/Users/netsp/OneDrive/Desktop/Appium_Demo/appium_code/node_modules/@wdio/utils/build/index.js:893:23)\n    at async Context.<anonymous> (tests\\02_search.test.js:20:28)",
+                "diff": null
+              },
+              "uuid": "33d9e26a-a399-4923-a347-16089d90aadc",
+              "parentUUID": "182f0b7f-9960-4692-aaa2-223af981a5a0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "33d9e26a-a399-4923-a347-16089d90aadc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1855,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.1.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
